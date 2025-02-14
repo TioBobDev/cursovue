@@ -1,5 +1,9 @@
 <template>
-    <PrimeiroComponente />
+    <div>
+      <PrimeiroComponente />
+      <p>{{ nome }}</p>
+    </div>
+
 </template>
 
 <script>
@@ -10,6 +14,12 @@ export default {
     name: 'App',
     components: {
       PrimeiroComponente
+    }, 
+    data() {
+      return {
+        nome: 'John Doe'
+      }
     }
+
   }
 </script>
