@@ -11,6 +11,9 @@
       <li v-show="programo_phyton">Python</li>
       <li v-show="programo_java">Java</li>
     </ul>
+    <div>
+      <button @click="ShowEmail">{{ textoBotao }}</button>
+    </div>
     <p v-show="mostrar_email">
       Gostou do meu currículo? Mande um email para: {{ email }}
     </p>
@@ -40,10 +43,21 @@ export default {
       programo_java: false,
       programo_vue: true,
       programo_phyton: true,
-      mostrar_email: true,
+      mostrar_email: false,
       email: "meuemail@meuemail.com",
       meu_link: "https://github.com/TioBobDev",
+      textoBotao: "Mostra e-mail",
     };
+  },
+  methods: {
+    ShowEmail() {
+      this.mostrar_email = !this.mostrar_email;
+      if (!this.mostrar_email) {
+        this.textoBotao = "Mostrar e-mail";
+      } else {
+        this.textoBotao = "Ocultar e-mail";
+      }
+    },
   },
 };
 </script>
