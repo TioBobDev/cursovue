@@ -1,17 +1,33 @@
 <template>
   <div>
-    <p>Estou trabalhando no momento.</p>
+    <p v-if="esta_trabalhando">Estou trabalhando no momento.</p>
+    <p v-else>
+      Não estou trabalhando no momento. Procurando novas oportunidades
+    </p>
     <p>Utilizo as seguintes tecnologias.</p>
     <ul>
-      <li>PHP</li>
-      <li>Vue</li>
-      <li>Python</li>
+      <li v-show="programo_PHP">PHP</li>
+      <li v-show="programo_vue">Vue</li>
+      <li v-show="programo_phyton">Python</li>
+      <li v-show="programo_java">Java</li>
     </ul>
+    <p v-show="mostrar_email">Gostou do meu currículo? Mande um email para: {{ email }}</p>
   </div>
 </template>
 
 <script>
 export default {
   name: "Info",
+  data() {
+    return {
+      esta_trabalhando: false,
+      programo_PHP: true,
+      programo_java: false,
+      programo_vue: true,
+      programo_phyton: true,
+      mostrar_email: true,
+      email: "meuemail@meuemail.com",
+    };
+  },
 };
 </script>
