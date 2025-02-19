@@ -11,13 +11,28 @@
       <li v-show="programo_phyton">Python</li>
       <li v-show="programo_java">Java</li>
     </ul>
-    <p v-show="mostrar_email">Gostou do meu currículo? Mande um email para: {{ email }}</p>
+    <p v-show="mostrar_email">
+      Gostou do meu currículo? Mande um email para: {{ email }}
+    </p>
+    <!-- o v-bind,ou apenas :, permite que eu consiga acessar o link dinamicamente -->
+    <p>
+      Para acessar meu portifólio,
+      <a v-bind:href="meu_link" target="_blank">basta clicar aqui</a>
+    </p>
+    <div>
+      <Picture />
+    </div>
   </div>
 </template>
 
 <script>
+import Picture from "./Picture.vue"; // importando o componente Picture.vue
+
 export default {
   name: "Info",
+  components: {
+    Picture,
+  },
   data() {
     return {
       esta_trabalhando: false,
@@ -27,6 +42,7 @@ export default {
       programo_phyton: true,
       mostrar_email: true,
       email: "meuemail@meuemail.com",
+      meu_link: "https://github.com/TioBobDev",
     };
   },
 };
