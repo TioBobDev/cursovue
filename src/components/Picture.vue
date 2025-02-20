@@ -1,5 +1,5 @@
 <template>
-    <img :src="profile" :alt="descricao">
+    <img class="size-picture" :src="profile" :alt="descricao">
 </template>
 
 <script>

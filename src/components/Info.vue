@@ -18,7 +18,7 @@
       Gostou do meu currículo? Mande um email para: {{ email }}
     </p>
     <!-- o v-bind,ou apenas :, permite que eu consiga acessar o link dinamicamente -->
-    <p>
+    <p class="teste">
       Para acessar meu portifólio,
       <a v-bind:href="meu_link" target="_blank">basta clicar aqui</a>
     </p>
