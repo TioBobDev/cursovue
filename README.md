@@ -10,9 +10,9 @@ Sinta-se à vontade para explorar o código, sugerir melhorias ou mesmo utilizar
 
 ## Tecnologias Utilizadas 🛠️
 
-- `	`Vue.js - Framework progressivo para construção de interfaces de usuário.
-- `	`JavaScript (ES6+) - Para a lógica e interações.
-- `	`HTML5 & CSS3 - Para a estrutura e o estilo.
+- Vue.js - Framework progressivo para construção de interfaces de usuário.
+- JavaScript (ES6+) - Para a lógica e interações.
+- HTML5 & CSS3 - Para a estrutura e o estilo.
 
 ## Como Clonar e Rodar o Projeto
 
@@ -64,11 +64,11 @@ Estrutura do Projeto 📁
 
 ## O Que Estou Aprendendo 🎓
 
-- `	`Criação de componentes reutilizáveis.
-- `	`Gerenciamento de estado com Vuex.
-- `	`Roteamento com Vue Router.
-- `	`Integração com APIs REST.
-- `	`Boas práticas de desenvolvimento frontend.
+- Criação de componentes reutilizáveis.
+- Gerenciamento de estado com Vuex.
+- Roteamento com Vue Router.
+- Integração com APIs REST.
+- Boas práticas de desenvolvimento frontend.
 
 ## Como Contribuir 🤝
 
