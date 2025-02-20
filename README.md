@@ -65,10 +65,15 @@ Estrutura do Projeto 📁
 ## O Que Estou Aprendendo 🎓
 
 - Criação de componentes reutilizáveis.
-- Gerenciamento de estado com Vuex.
 - Roteamento com Vue Router.
-- Integração com APIs REST.
-- Boas práticas de desenvolvimento frontend.
+- Inputs e Data Binding.
+- Vue CLI.
+- Dados em componentes.
+- Diretivas (v-if, v-show, v-for).
+- Atributos dinâmicos.
+- Métodos.
+- Css Scoped e Global.
+- Renderização de lista (v-for).
 
 ## Como Contribuir 🤝
 
