@@ -1,20 +1,20 @@
-Curso Vue.js 🚀
+## Curso Vue.js 🚀
 
 Bem-vindo ao repositório do Curso Vue.js! Este é um espaço onde estou documentando minha jornada de aprendizado com o framework Vue.js, uma poderosa ferramenta para construção de interfaces web interativas.
 
-Sobre o Repositório 📝
+## Sobre o Repositório 📝
 
 Este repositório se trata do curso de vue.js, ministrado pelo Matheus Battisti, do canal Hora de Codar. Aqui você vai encontrar códigos, exercícios, anotações e projetos desenvolvidos ao longo do curso.
 
 Sinta-se à vontade para explorar o código, sugerir melhorias ou mesmo utilizar o repositório como referência para seus estudos!
 
-Tecnologias Utilizadas 🛠️
+## Tecnologias Utilizadas 🛠️
 
 - `	`Vue.js - Framework progressivo para construção de interfaces de usuário.
 - `	`JavaScript (ES6+) - Para a lógica e interações.
 - `	`HTML5 & CSS3 - Para a estrutura e o estilo.
 
-Como Clonar e Rodar o Projeto
+## Como Clonar e Rodar o Projeto
 
 \# Clone o repositório
 
@@ -62,7 +62,7 @@ Estrutura do Projeto 📁
 
 └── vue.config.js
 
-O Que Estou Aprendendo 🎓
+## O Que Estou Aprendendo 🎓
 
 - `	`Criação de componentes reutilizáveis.
 - `	`Gerenciamento de estado com Vuex.
@@ -70,11 +70,11 @@ O Que Estou Aprendendo 🎓
 - `	`Integração com APIs REST.
 - `	`Boas práticas de desenvolvimento frontend.
 
-Como Contribuir 🤝
+## Como Contribuir 🤝
 
 Se você tem dicas, sugestões ou mesmo quer trocar uma ideia sobre Vue.js, abra uma issue ou faça um pull request! Toda contribuição é bem-vinda.
 
-Contato 📬
+## Contato 📬
 
 Se você gostou do repositório, não esqueça de deixar uma estrela ⭐ e me seguir para acompanhar minha jornada no mundo do Vue.js!
 
