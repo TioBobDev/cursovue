@@ -4,12 +4,18 @@
     <p v-else>
       Não estou trabalhando no momento. Procurando novas oportunidades
     </p>
-    <p>Utilizo as seguintes tecnologias.</p>
+    <p>Utilizo as seguintes tecnologias para back-end:</p>
     <ul>
-      <li v-show="programo_PHP">PHP</li>
-      <li v-show="programo_vue">Vue</li>
-      <li v-show="programo_phyton">Python</li>
-      <li v-show="programo_java">Java</li>
+      <!-- AQUI EU PASSO DENTRO DO V-FOR O ARGUMENTO QUE EU QUERO RENDERIZAR NO LAÇO E DEPOIS A CHAVE, NESTE CASO INDEX, ATRIBUIDA PELO v-bind:key -->
+      <li v-for="(backend, index) in programoBackend" v-bind:key="index">
+        {{ backend }}
+      </li>
+    </ul>
+    <p>Utilizo as seguintes tecnologias para front-end:</p>
+    <ul>
+      <li v-for="frontend in programoFrontend" :key="frontend.id">
+        {{ frontend.language }}
+      </li>
     </ul>
     <div>
       <button @click="ShowEmail">{{ textoBotao }}</button>
@@ -18,7 +24,7 @@
       Gostou do meu currículo? Mande um email para: {{ email }}
     </p>
     <!-- o v-bind,ou apenas :, permite que eu consiga acessar o link dinamicamente -->
-    <p class="teste">
+    <p>
       Para acessar meu portifólio,
       <a v-bind:href="meu_link" target="_blank">basta clicar aqui</a>
     </p>
@@ -39,14 +45,17 @@ export default {
   data() {
     return {
       esta_trabalhando: false,
-      programo_PHP: true,
-      programo_java: false,
-      programo_vue: true,
-      programo_phyton: true,
       mostrar_email: false,
       email: "meuemail@meuemail.com",
       meu_link: "https://github.com/TioBobDev",
       textoBotao: "Mostra e-mail",
+      programoBackend: ["PHP", "Java", "Python"],
+      programoFrontend: [
+        { id: 1, language: "HTML" },
+        { id: 2, language: "CSS" },
+        { id: 3, language: "Vue.js" },
+        { id: 4, language: "Node.js" },
+      ],
     };
   },
   methods: {
