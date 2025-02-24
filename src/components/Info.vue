@@ -23,12 +23,15 @@
     <p v-show="mostrar_email">
       Gostou do meu currículo? Mande um email para: {{ email }}
     </p>
+    <Reutilizacao />
+    <Reutilizacao />
     <!-- o v-bind,ou apenas :, permite que eu consiga acessar o link dinamicamente -->
     <p>
       Para acessar meu portifólio,
       <a v-bind:href="meu_link" target="_blank">basta clicar aqui</a>
     </p>
     <div>
+      <Reutilizacao />
       <Picture />
     </div>
   </div>
@@ -36,11 +39,13 @@
 
 <script>
 import Picture from "./Picture.vue"; // importando o componente Picture.vue
+import Reutilizacao from "./Reutilizacao.vue";
 
 export default {
   name: "Info",
   components: {
     Picture,
+    Reutilizacao,
   },
   data() {
     return {
