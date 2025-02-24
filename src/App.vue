@@ -1,6 +1,6 @@
 <template>
     <div>
-      <Header/>
+      <Header :esta_logado="true" />    <!-- esta passando as informações por props no modo array-->
       <PrimeiroComponente />
       <p>{{ nome }}</p>
       <LifeCycle />
@@ -10,8 +10,6 @@
 </template>
 
 <script>
-import LifeCycleVue from './components/LifeCycle.vue'
-
 import Header from './components/Header.vue'
 import PrimeiroComponente from './components/PrimeiroComponente.vue'
 import LifeCycle from './components/LifeCycle.vue'

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h3></h3>
     <p v-if="esta_trabalhando">Estou trabalhando no momento.</p>
     <p v-else>
       Não estou trabalhando no momento. Procurando novas oportunidades
@@ -47,11 +48,13 @@ export default {
     Picture,
     Reutilizacao,
   },
+  props:{
+     email: String,
+     esta_trabalhando: Boolean,
+  },
   data() {
     return {
-      esta_trabalhando: false,
       mostrar_email: false,
-      email: "meuemail@meuemail.com",
       meu_link: "https://github.com/TioBobDev",
       textoBotao: "Mostra e-mail",
       programoBackend: ["PHP", "Java", "Python"],
